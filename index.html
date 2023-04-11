@@ -1,4 +1,30 @@
-<meta charset="UTF-8">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Alura Curso</title>
+</head>
+<body>
+	<h1>calculoImc</h1>
+</body>
+
 <script>
-    document.write("Estoy escribiendo desde el mundo JavaScript en el mundo HTML");
+
+function imprimir(mensaje) {
+	document.write(mensaje);
+}
+function calculoImc(peso,altura) {
+	imc = peso / (altura * altura);
+	document.write("<br><br>");
+	return(imc);
+}
+
+nombre = prompt("nombre del Usuario: ")
+pesoUsuario = prompt("peso del Usuario: ")
+alturaUsuario = prompt("altura del Usuario: ")
+imc = calculoImc(pesoUsuario, alturaUsuario)
+imprimir("El IMC calculado de " + nombre + " es " + calculoImc(pesoUsuario,alturaUsuario));
 </script>
+</html>
