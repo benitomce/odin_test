@@ -1,30 +1,28 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Alura Curso</title>
-</head>
-<body>
-	<h1>calculoImc</h1>
-</body>
+<meta charset="UTF-8">
+
+<h1>PROGRAMA JUEGO DE ADIVINACION </h1>
 
 <script>
 
-function imprimir(mensaje) {
-	document.write(mensaje);
-}
-function calculoImc(peso,altura) {
-	imc = peso / (altura * altura);
-	document.write("<br><br>");
-	return(imc);
-}
+    function imprimir(frase) {
+        document.write(frase);
+		document.write("<br>");    
+        document.write("<br>");    
+        document.write("<br>");  
+    } 
 
-nombre = prompt("nombre del Usuario: ")
-pesoUsuario = prompt("peso del Usuario: ")
-alturaUsuario = prompt("altura del Usuario: ")
-imc = calculoImc(pesoUsuario, alturaUsuario)
-imprimir("El IMC calculado de " + nombre + " es " + calculoImc(pesoUsuario,alturaUsuario));
+    function sorteo(n) { 
+            return Math.round(Math.random()*n);
+        }   
+
+    var numeroPensado = sorteo(10);
+    var numeroLanzado = parseInt(prompt("Ingrese un número entre 0-10"))
+
+    if (numeroPensado == numeroLanzado){
+        imprimir("usted acertó");
+    }
+    else {
+        imprimir("usted erró, el número pensado era " + numeroPensado);    
+    }
+
 </script>
-</html>

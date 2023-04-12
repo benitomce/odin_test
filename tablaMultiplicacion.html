@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tabla de multiplicacion</title>
+</head>
+<body>
+    <h1>pruebas chidas</h1>
+</body>
+
+<script>
+    function mensaje(mensaje) {
+        document.write(mensaje)
+        document.write("<br><br><br>")
+    }
+
+    var multiplicador = 1;
+    var numeroMultiplicado = parseInt(promt("que numero quieres multiplicar?"))
+    while (multiplicador <= 10){
+        mensaje(numeroMultiplicado * multiplicador);
+        multiplicador = multiplicador +1;
+    }
+
+    mensaje("fin")
+</script>
+</html>
