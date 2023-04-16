@@ -16,13 +16,23 @@
         document.write("<br><br><br>")
     }
 
-    var multiplicador = 1;
-    var numeroMultiplicado = parseInt(promt("que numero quieres multiplicar?"))
-    while (multiplicador <= 10){
-        mensaje(numeroMultiplicado * multiplicador);
-        multiplicador = multiplicador +1;
-    }
+    var numeroAleatorio=Math.round(Math.random()*10);
+    var intentos = 3;
+    var contador = 1;
 
-    mensaje("fin")
+        while (contador <= intentos) {
+        var numeroUsuario = parseInt(prompt("que numero estoy pensando del 1 al 10?"));
+        if (numeroAleatorio == numeroUsuario) {
+            mensaje("acertaste, el numero era " + numeroAleatorio);
+            mensaje("acertaste en el intento #" + contador);
+            break;
+        }
+        else {
+            alert("ese no es el numero!");
+        }
+        contador++;
+        }
+
+
 </script>
 </html>
