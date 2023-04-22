@@ -22,14 +22,13 @@ pincel.fillRect(0,0,600,400);
 var r=10
 var xAleatorio;
 var yAleatorio;
-function dibujarCirculo(x,y,r,color){
+function dibujarCuadro(x,y,r,color){
     pincel.fillStyle= color;
-    pincel.beginPath();
-    pincel.arc(x,y,r,0,2*Math.PI)
+    pincel.fillRect(x,y,tamano,tamano);
     pincel.fill();
 }
 
-function dibujarObjetivo(x,y){
+function paletaColores(x,y){
     dibujarCirculo(x,y,r+20,"red");
     dibujarCirculo(x,y,r+10,"white");
     dibujarCirculo(x,y,r,"red");
