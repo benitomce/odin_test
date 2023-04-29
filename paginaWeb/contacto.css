@@ -44,51 +44,18 @@ img{
     height: auto;
 }
 
-.productos{
-    width: auto;
+
+main{
+    width: 940px;
     margin: 0 auto;
-    padding: 50px;
 }
 
-.productos li{
-    display: inline-block;
-    text-align: center;
-    width: 25%;
-    vertical-align: top;
-    margin: 0 1.5%;
-    padding: 30px 20px;
-    box-sizing: border-box;
-    border: 2px solid black;
-    border-radius: 20px;
+form{
+    margin:  40px;
 }
-
-
-.productos li:hover{    
-    border-color: gold;
-}
-
-.productos li:active{    
-    border-color: magenta;
-}
-
-li img{
-    height: 250px;
-}
-
-.productos h2 {
-    font-size: 30px;
-    font-weight: bold;
-}
-
-
-.desc{
-    font-size: 18px;
-}
-
-.piloto{
-    font-size: 20px;
-    font-weight: bold;
-    margin-top: 15px;
+form label, input {
+    display: block;
+    margin: 0 0 10px;
 }
 
 

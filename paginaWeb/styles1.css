@@ -9,10 +9,10 @@
 }
 
 
-img{
-    width: 100%;
-    height: auto;
-    margin: 1px;
+.logo{
+    display: block;
+    margin: auto;
+    width: 50%;
 }
 
 p{
@@ -45,8 +45,12 @@ ul{
     margin-right: 15%;
 }
 
-
+.lista{
+    display: inline;
+}
 .imagen{
-    width: 50%;
+    width: 300px;
     height: auto;
+    align-items:baseline;
+    
 }
