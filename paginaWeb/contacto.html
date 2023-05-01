@@ -1,40 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contacto</title>
-    <link rel="stylesheet" href="reset.css"/>
-    <link rel="stylesheet" href="contacto.css"/>
-</head>
-<body>
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="contacto.css" />
+  </head>
+  <body>
     <header class="encabezado">
-        <div class="caja">
-            <h1><img src="logo.webp"></h1>
-            <nav>
-                <ul class="navegacion">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="productos.html">Mechas</a></li>
-                    <li><a href="contacto.html">Contacto</a></li>
-                </ul>
-            </nav>
-        </div>
+      <div class="caja">
+        <h1><img src="logo.webp" /></h1>
+        <nav>
+          <ul class="navegacion">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="productos.html">Mechas</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+          </ul>
+        </nav>
+      </div>
     </header>
     <main>
-        <form>
-            <label for="Nombre">Nombre y Apellido</label>
-            <input type="text" id="Nombre">
-            <label for="correoelectronico">Correo Electronico</label>
-            <input type="text" id="correoelectronico">
-            <label for="telefono">Telefono</label>
-            <input type="text" id="telefono">
-            <input type="submit" value="Enviar">
-        </form>
+      <form>
+          <label for="Nombre">Nombre y Apellido</label>
+          <input type="text" id="Nombre" class="input-padron"/>
+          <label for="correoelectronico">Correo Electronico</label>
+          <input type="text" id="correoelectronico" class="input-padron"/>
+          <label for="telefono">Telefono</label>
+          <input type="text" id="telefono" class="input-padron"/>
+          <label for="mensaje">Mensaje</label>
+          <textarea cols="70" rows="10" id="mensaje" class="input-padron"></textarea>
+        <div>
+          <p>Como le gustaria que lo contactemos?</p>
+            <label for="radio-email"><input type="radio" name="contacto" value="email" id="radio-email">Email</label>
+            <label for="radio-telefono"><input type="radio" name="contacto" value="telefono" id="radio-telefono">Telefono</label>
+            <label for="radio-wats"><input type="radio" name="contacto" value="Whatsapp" id="radio-wats">Whatsapp</label>
+        </div>
+        <label class="checkbox"><input type="checkbox">Le gustaria recibir novedades de los EVA?</label>
+        <input type="submit" value="Enviar" />
+      </form>
     </main>
     <footer>
-        <img src="nerv.webp">
-        <p class="copyright">&copy Neon Genesis Evangelion </p>
+      <img src="nerv.webp" />
+      <p class="copyright">&copy Neon Genesis Evangelion</p>
     </footer>
-</body>
+  </body>
 </html>
