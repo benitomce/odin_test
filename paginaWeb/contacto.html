@@ -11,7 +11,7 @@
   <body>
     <header class="encabezado">
       <div class="caja">
-        <h1><img src="logo.webp" /></h1>
+        <h1><img src="logo.webp" alt="Logo de la pagina" /></h1>
         <nav>
           <ul class="navegacion">
             <li><a href="index.html">Home</a></li>
@@ -23,26 +23,106 @@
     </header>
     <main>
       <form>
-          <label for="Nombre">Nombre y Apellido</label>
-          <input type="text" id="Nombre" class="input-padron"/>
-          <label for="correoelectronico">Correo Electronico</label>
-          <input type="text" id="correoelectronico" class="input-padron"/>
-          <label for="telefono">Telefono</label>
-          <input type="text" id="telefono" class="input-padron"/>
-          <label for="mensaje">Mensaje</label>
-          <textarea cols="70" rows="10" id="mensaje" class="input-padron"></textarea>
-        <div>
-          <p>Como le gustaria que lo contactemos?</p>
-            <label for="radio-email"><input type="radio" name="contacto" value="email" id="radio-email">Email</label>
-            <label for="radio-telefono"><input type="radio" name="contacto" value="telefono" id="radio-telefono">Telefono</label>
-            <label for="radio-wats"><input type="radio" name="contacto" value="Whatsapp" id="radio-wats">Whatsapp</label>
-        </div>
-        <label class="checkbox"><input type="checkbox">Le gustaria recibir novedades de los EVA?</label>
-        <input type="submit" value="Enviar" />
+        <label for="Nombre">Nombre y Apellido</label>
+        <input type="text" id="Nombre" class="input-padron" required />
+        <label for="correoelectronico">Correo Electronico</label>
+        <input
+          type="email"
+          id="correoelectronico"
+          class="input-padron"
+          required
+          placeholder="email@dominio.com"
+        />
+        <label for="telefono">Telefono</label>
+        <input
+          type="tel"
+          id="telefono"
+          class="input-padron"
+          required
+          placeholder="(+xx) xxx xxx xxxx"
+        />
+        <label for="mensaje">Mensaje</label>
+        <textarea
+          cols="70"
+          rows="10"
+          id="mensaje"
+          class="input-padron"
+          required
+        ></textarea>
+        <fieldset>
+          <legend>Como le gustaria que lo contactemos?</legend>
+          <label for="radio-email"
+            ><input
+              class="radio"
+              type="radio"
+              name="contacto"
+              value="email"
+              id="radio-email"
+            />
+            Email</label
+          >
+          <label for="radio-telefono"
+            ><input
+              class="radio"
+              type="radio"
+              name="contacto"
+              value="telefono"
+              id="radio-telefono"
+            />
+            Telefono</label
+          >
+          <label for="radio-wats"
+            ><input
+              class="radio"
+              type="radio"
+              name="contacto"
+              value="Whatsapp"
+              id="radio-wats"
+              checked
+            />
+            Whatsapp</label
+          >
+        </fieldset>
+        <fieldset>
+          <legend>En que horario prefiere que le contactemos?</legend>
+          <select>
+            <option>Morning</option>
+            <option>Evening</option>
+            <option>Night</option>
+          </select>
+        </fieldset>
+        <label
+          ><input class="checkbox" type="checkbox" /> Le gustaria recibir
+          novedades de los EVA?</label
+        >
+        <input class="enviar" type="submit" value="Enviar" />
       </form>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Dia</th>
+            <th>Horario</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Lunes</td>
+            <td>08:00 ~ 20:00</td>
+          </tr>
+          <tr>
+            <td>Miercoles</td>
+            <td>08:00 ~ 20:00</td>
+          </tr>
+          <tr>
+            <td>Viernes</td>
+            <td>08:00 ~ 20:00</td>
+          </tr>
+        </tbody>
+      </table>
     </main>
     <footer>
-      <img src="nerv.webp" />
+      <img src="nerv.webp" alt="Logo NERV" />
       <p class="copyright">&copy Neon Genesis Evangelion</p>
     </footer>
   </body>

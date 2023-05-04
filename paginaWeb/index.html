@@ -1,31 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Lorem Ipsum</title>
-    <link rel="stylesheet" href="styles1.css">
-</head>
-<body>
-    <div class="principal">
-    <h1>Lorem Ipsum</h1>
-    <img class="logo" src="home.jpg">
-    <p id="p1">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p> 
-    <p id="p2"><em>Duis aute irure <strong>dolor</strong> in reprehenderit in voluptate velit</em> esse cillum dolore eu fugiat <strong>nulla pariatur</strong>. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
-    </div>
-    <h6><a href="productos.html">Menu</a></h6>
-    <h2>lorem ipsum</h2>
-    <div class="lista">
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="encabezado">
+      <div class="caja">
+        <h1><img src="logo.webp" alt="Logo de la pagina" /></h1>
+        <nav>
+          <ul class="navegacion">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="productos.html">Mechas</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <img class="logo" src="home.jpg" />
+    <main>
+      <section class="principal">
+        <h1 class="titulo-principal">Lorem Ipsum</h1>
+        <img class="nerv" src="nerv.png" alt="logo nerv">
+        <p id="p1">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+          aliquip ex ea commodo consequat.
+        </p>
+        <p id="p2">
+          <em
+            >Duis aute irure <strong>dolor</strong> in reprehenderit in
+            voluptate velit</em
+          >
+          esse cillum dolore eu fugiat <strong>nulla pariatur</strong>.
+          Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+          officia deserunt mollit anim id est laborum
+        </p>
+      </section>
+      <h6><a href="productos.html">Menu</a></h6>
+      <section class="lista">
+        <h2 class="titulo-principal">lorem ipsum</h2>
         <ul>
-            <li>Mauris scelerisque turpis vel nunc efficitur, ut euismod arcu gravida.</li>
-            <li>iaculis felis vitae nibh blandit luctus.</li>
-            <li>Nunc vehicula mauris ut neque dapibus, ut auctor felis vehicula.</li>
-            <li>Maecenas tristique ligula eu augue convallis fermentum.</li>
+          <li>
+            Mauris scelerisque turpis vel nunc efficitur, ut euismod arcu
+            gravida.
+          </li>
+          <li>iaculis felis vitae nibh blandit luctus.</li>
+          <li>
+            Nunc vehicula mauris ut neque dapibus, ut auctor felis vehicula.
+          </li>
+          <li>Maecenas tristique ligula eu augue convallis fermentum.</li>
         </ul>
-        <img src="home.jpg" class="imagen">
-    </div>
-
-
-</body>
+        <img src="home.jpg" class="imagen" />
+      </section>
+    </main>
+    <footer>
+      <img src="nerv.webp" alt="Logo NERV" />
+      <p class="copyright">&copy Neon Genesis Evangelion</p>
+    </footer>
+  </body>
 </html>
