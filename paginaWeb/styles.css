@@ -1,46 +1,41 @@
 * {
   font-family: "Raleway", sans-serif;
 }
-header {
+
+.encabezado {
+  font-family: "Raleway", sans-serif;
   background-color: limegreen;
   padding: 20px;
 }
 
-.caja {
-  width: 100%;
-  position: relative;
-  margin: 0 auto;
+.caja{
+  display: flex;
+  justify-content: space-evenly;
+  flex-flow: column wrap;
+  width: auto;
 }
 
-nav {
-  position: absolute;
-  top: 60px;
-  right: 0px;
-  font-family: "Courier New", Courier, monospace;
+.logoHeader {
+  width: 200px;
+  padding-bottom: 20px;
+}
+
+.opciones{
+  display: flex;
+  gap: 20px 
+}
+
+ul a {
   text-transform: uppercase;
-}
-
-nav li {
-  display: inline;
-  margin: 0 0 0 15px;
-}
-
-nav a {
-  text-transform: lowercase;
   color: purple;
-  font-weight: bolder;
-  font-size: 25px;
+  font-size: 20px;
   text-decoration: none;
+  text-shadow: 1px 1px 10px green;
 }
 
-nav a:hover {
+ul a:hover {
   color: yellow;
   text-decoration: underline;
-}
-
-img {
-  width: 30%;
-  height: auto;
 }
 
 form {
@@ -61,7 +56,7 @@ footer {
 }
 
 footer img {
-  height: 200px;
+  height: 100px;
   width: auto;
 }
 
@@ -71,6 +66,7 @@ footer img {
 
 form {
   margin: 40px 0;
+  padding-left: 20px;
 }
 
 form label,
@@ -162,6 +158,7 @@ main {
 
 .nerv {
   width: 80px;
+  height: auto;
   float: left;
   margin: 5px;
 }
@@ -200,7 +197,7 @@ main {
 .contenido-diferenciales {
   display: flex;
   justify-content: center;
-  }
+}
 
 .lista-diferenciales {
   display: flex;
@@ -220,7 +217,8 @@ main {
   font-weight: bold;
 }
 .imagen-diferenciales {
-  width: 40%;
+  width: 150px;
+  height: auto;
 }
 
 .items-diferenciales:hover {
@@ -228,6 +226,56 @@ main {
 }
 
 .video {
-  width: 560px;
+  text-align: center;
+  width: 70%;
+  height: auto;
   margin: 1em auto;
+}
+
+/*CSS para pagina Productos*/
+
+.productos {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  text-align: center;
+  height: 100%;
+}
+
+.productos:hover {
+  border-color: yellow;
+}
+
+h2 {
+  padding: 10px;
+}
+
+.piloto {
+  padding: 10px;
+}
+
+main img {
+  height: 200px;
+  width: auto;
+}
+
+.productos li {
+  margin: 20px;
+  border: 2px solid black;
+  border-radius: 10px;
+  width: 150px;
+}
+
+.productos li:hover {
+  border-color: yellow;
+}
+
+
+
+
+
+
+
+@media screen and (max-width:480px){
+
 }
