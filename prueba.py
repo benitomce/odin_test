@@ -1,2 +1,2 @@
-x=6
+x="hola"
 print(x)
