@@ -10,6 +10,7 @@
 
 .caja{
   display: flex;
+  flex: 1;
   justify-content: space-evenly;
   flex-flow: column wrap;
   width: auto;
