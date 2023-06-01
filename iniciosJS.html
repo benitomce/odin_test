@@ -15,26 +15,14 @@
     </select>
     <p id="parrafo"></p>
     <script>
-      const select = document.querySelector("select");
-      const para = document.querySelector("p");
-
-      select.addEventListener("change", setWheater);
-
-      function setWheater() {
-        const choice = select.value;
-
-        if (choice === "sunny") {
-          para.textContent = "It's nice and sunny today";
-        } else if (choice === "rainy") {
-          para.textContent = "Rain is falling outside";
-        } else if (choice === "snowing") {
-          para.textContent = "The snow is coming down";
-        } else if (choice === "overcast") {
-          para.textContent = "It's cloudy";
-        } else {
-          para.textContent = "";
-        }
+      
+      function showMessage(){
+        alert("Hellooo");
       }
+      
+      console.clear();
+      showMessage();
+      
     </script>
   </body>
 </html>
