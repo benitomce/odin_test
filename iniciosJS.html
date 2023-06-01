@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Page Title</title>
+  </head>
+  <body>
+    <label for="wheater">Select the wheater type today: </label>
+    <select id="wheater">
+      <option value="">--Make a choice--</option>
+      <option value="sunny">Sunny</option>
+      <option value="rainy">Rainy</option>
+      <option value="snowing">Snowing</option>
+      <option value="overcast">Overcast</option>
+    </select>
+    <p id="parrafo"></p>
+    <script>
+      const select = document.querySelector("select");
+      const para = document.querySelector("p");
+
+      select.addEventListener("change", setWheater);
+
+      function setWheater() {
+        const choice = select.value;
+
+        if (choice === "sunny") {
+          para.textContent = "It's nice and sunny today";
+        } else if (choice === "rainy") {
+          para.textContent = "Rain is falling outside";
+        } else if (choice === "snowing") {
+          para.textContent = "The snow is coming down";
+        } else if (choice === "overcast") {
+          para.textContent = "It's cloudy";
+        } else {
+          para.textContent = "";
+        }
+      }
+    </script>
+  </body>
+</html>
